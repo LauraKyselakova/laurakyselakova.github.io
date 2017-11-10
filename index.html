@@ -1,8 +1,5 @@
 <!DOCTYPE html> 
 <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
-<video playsinline autoplay muted loop poster="video.mp4" id="video">
-	<source src="video.mp4" type="video/mp4">
-</video>
 <head>
 	<title>LauraK</title>
 </head>
@@ -21,4 +18,26 @@
     	text-align:center;
     	height: 2px;
  	}
+ 	video#video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
  </style>
+
+ <!-- SECCION VIDEO --> 
+ <video playsinline autoplay muted loop poster="video.mp4" id="video">
+	<source src="video.mp4" type="video/mp4">
+</video>
+
