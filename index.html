@@ -5,6 +5,7 @@
 </head>
 
 <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<h1>Laura K.</h1>
 	<h2>ORIGINAL DESIGN</h2>
 </body>
@@ -51,6 +52,19 @@
     background-size: cover; 
 }
  </style>
+
+ SLIDE UP
+<script>
+$(document).ready(function(){
+    $(".slide-up").click(function(){
+        $("#page").animate( {height:'100%'}, 1000)
+    });
+    $(".btn2").click(function(){
+        $("p").slideDown();
+    })
+})
+</script>
+{}
 
  <!-- SECCION VIDEO --> 
  <video playsinline autoplay muted loop poster="video.mp4" id="video">
